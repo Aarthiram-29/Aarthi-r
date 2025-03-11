@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Portfolio</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .project {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #eaeaea;
+            border-radius: 5px;
+        }
+
+        .project a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        button {
+            background: #007bff;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>John Doe</h1>
+        <p>Full-Time Nomad & Web Developer</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m a full-time campervan traveler and a passionate web developer. I enjoy building web applications and sharing my travel experiences.</p>
+        <button onclick="displayMessage()">Click Me!</button>
+        <p id="message"></p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Travel Blog</h3>
+            <p>A blog documenting my campervan adventures.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A modern and responsive portfolio to showcase my skills.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:camper@nomadlife.com">camper@nomadlife.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 John Doe</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function displayMessage() {
+            document.getElementById("message").innerHTML = "Thanks for visiting my portfolio!";
+        }
+    </script>
+
+</body>
+</html>
